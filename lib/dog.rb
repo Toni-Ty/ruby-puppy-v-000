@@ -34,9 +34,9 @@ class Person
       age = data[1]
       company = data[2]
 
-      person = self.new
-      binding.pry # This is an important line.
+      person = self.new # This is an important line.
       person.name = name
+      binding.pry
       person.age = age
       person.company = company
       person

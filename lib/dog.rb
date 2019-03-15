@@ -29,8 +29,8 @@ class Person
   def self.new_from_csv(csv_data)
     rows = csv_data.split("\n")
     people = rows.collect do |row|
-      binding.pry
       data = row.split(", ")
+      binding.pry
       name = data[0]
       age = data[1]
       company = data[2]

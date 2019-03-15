@@ -30,12 +30,12 @@ class Person
     rows = csv_data.split("\n")
     people = rows.collect do |row|
       data = row.split(", ")
-      binding.pry
       name = data[0]
       age = data[1]
       company = data[2]
 
-      person = self.new # This is an important line.
+      person = self.new
+      binding.pry # This is an important line.
       person.name = name
       person.age = age
       person.company = company

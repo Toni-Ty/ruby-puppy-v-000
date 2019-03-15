@@ -1,3 +1,4 @@
+require pry
 # class Dog
 #
 #   attr_accessor :name
@@ -27,6 +28,7 @@ class Person
 
   def self.new_from_csv(csv_data)
     rows = csv_data.split("\n")
+    binding.pry
     people = rows.collect do |row|
       data = row.split(", ")
       name = data[0]
